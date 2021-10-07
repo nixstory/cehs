@@ -19,9 +19,9 @@ public class ReportLogService {
 	
 	public List<ReportLog> getReportLogs() {
 		
-		for (int i=0;i<5;i++) {
-			reportLogs.add(makeReport());
-		}
+//		for (int i=0;i<5;i++) {
+//			reportLogs.add(makeReport());
+//		}
 		
 		return reportLogs;
 	}
