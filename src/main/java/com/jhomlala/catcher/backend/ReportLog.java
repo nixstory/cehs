@@ -11,6 +11,7 @@ public class ReportLog {
 	private Map<String,String> applicationParameters;
 	private Map<String,String> customParameters;
 	private Timestamp dateTime;
+	
 	public String getError() {
 		return error;
 	}
