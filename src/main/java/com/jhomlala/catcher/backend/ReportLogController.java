@@ -19,6 +19,16 @@ public class ReportLogController {
 	@Autowired
 	private ReportLogService reportLogService;
 	
+	@RequestMapping(value = "/", method = RequestMethod.POST)
+	@ResponseStatus(value = HttpStatus.OK)
+	public String handleLog(Model model) {
+		
+		List<ReportLog> reportsCopied = new ArrayList<ReportLog>(reportLogService.getReportLogs());
+		Collections.reverse(reportsCopied);
+		model.addAttribute("reportLogs",reportsCopied);
+		return "reports";
+	}
+	
 	@RequestMapping(value = "/report", method = RequestMethod.POST)
 	@ResponseStatus(value = HttpStatus.OK)
 	public void handleReportLog(@RequestBody ReportLog reportLog) {
