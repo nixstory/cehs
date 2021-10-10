@@ -19,7 +19,7 @@ public class ReportLogController {
 	@Autowired
 	private ReportLogService reportLogService;
 	
-	@RequestMapping(value = "/", method = RequestMethod.POST)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@ResponseStatus(value = HttpStatus.OK)
 	public String handleLog(Model model) {
 		
