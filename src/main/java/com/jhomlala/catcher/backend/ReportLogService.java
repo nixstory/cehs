@@ -32,7 +32,7 @@ public class ReportLogService {
 		reportLog.setStackTrace("#0 Object.noSuchMethod (dart:core-patch/object_patch.dart:54:5)");
 			
 		Map<String,String> applicationParameters = new HashMap<>();
-		applicationParameters.put("packageName", "io.dubhe.cehs");
+		applicationParameters.put("packageName", "io.reactspring.cehs");
 		applicationParameters.put("version", "1.0.0");
 		reportLog.setApplicationParameters(applicationParameters);
 
